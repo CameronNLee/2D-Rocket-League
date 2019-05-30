@@ -1,4 +1,4 @@
-### ECS189L-Project: 2D Rocket League!
+### ECS189L-Project: 2D Rocket League!!
 
 ## Team Member Roles
 
