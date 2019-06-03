@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Accelerate button to actually start moving in direction you are facing.
-        if (Input.GetButtonDown("Fire3"))
+        if (Input.GetButton("Fire3"))
         {
             this.Accelerate.Execute(this.gameObject);
         }
