@@ -315,6 +315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a956868ea8381244ea9c44553db9f737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Energy: {fileID: 0}
+  EnergyText: {fileID: 0}
 --- !u!50 &146101999
 Rigidbody2D:
   serializedVersion: 4
@@ -1669,6 +1671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a956868ea8381244ea9c44553db9f737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Energy: {fileID: 0}
+  EnergyText: {fileID: 0}
 --- !u!1 &1723512063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a956868ea8381244ea9c44553db9f737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Energy: {fileID: 1108242350}
+  EnergyText: {fileID: 1108478402}
 --- !u!96 &1728216532
 TrailRenderer:
   serializedVersion: 2
