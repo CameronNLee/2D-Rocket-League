@@ -11,3 +11,8 @@ Cameron - Movement/Physics, Sound
 Julian - Input, Press Kit & Trailer
 
 Frida - Animations and Visuals, Game feel
+
+
+Testing Questionnaire: https://docs.google.com/forms/d/e/1FAIpQLScsuVX_6BWee7REGlDsUyytzlI7KEUPhWhXYQCcHy7jrfs5xg/viewform
+
+Obtained the questions from: https://www.schellgames.com/blog/the-definitive-guide-to-playtest-questions
