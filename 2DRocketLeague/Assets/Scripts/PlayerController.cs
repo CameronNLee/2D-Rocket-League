@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Energy;
     public Text EnergyText;
+
+    public float KickForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,8 @@ public class PlayerController : MonoBehaviour
         this.Right = ScriptableObject.CreateInstance<TurnPlayerRight>();
         this.Left = ScriptableObject.CreateInstance<TurnPlayerLeft>();
         this.Accelerate = ScriptableObject.CreateInstance<AcceleratePlayer>();
+
+        this.KickForce = 10.0f;
     }
 
     // Update is called once per frame
@@ -53,4 +57,22 @@ public class PlayerController : MonoBehaviour
             this.Left.Execute(this.gameObject);
         }
     }
+    
+    void OnCollisionEnter(Collision collision)
+        {
+            // Here, we handle what happens when the player kicks the ball.
+            // Upon doing so, simply get the direction of the player,
+            // multiply that by the KickForce (adjustable float declared above),
+            // and assign that to be the ball's new velocity.
+            if (collision.gameObject.name == "ball" || collision.gameObject.name == "ball(Clone)")
+            {
+                var rigidBody = collision.gameObject.GetComponent<Rigidbody>();
+                if (rigidBody)
+                {
+                    Debug.Log ("Collision!");
+                    Vector3 direction = (collision.transform.position - this.transform.position).normalized;
+                    rigidBody.velocity = direction * this.KickForce;
+                }
+            }
+        }
 }
