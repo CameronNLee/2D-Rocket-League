@@ -130,6 +130,7 @@ public class PlayerController : MonoBehaviour
             if (residualEnergy != 0)
             {
                 SoundManager.Singleton.Play("boost1");
+                this.gameObject.GetComponent<TrailRenderer>().emitting = true;
             }
         }
         
@@ -148,11 +149,13 @@ public class PlayerController : MonoBehaviour
             else
             {
                 this.MovementSpeed = this.PreviousMovementSpeed;
+                this.gameObject.GetComponent<TrailRenderer>().emitting = false;
             }
         }
         if (Input.GetButtonUp("Jump"))
         {
             this.MovementSpeed = this.PreviousMovementSpeed;
+            this.gameObject.GetComponent<TrailRenderer>().emitting = false;
         }
     }
 
@@ -166,6 +169,7 @@ public class PlayerController : MonoBehaviour
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
             if (residualEnergy != 0)
             {
+                this.gameObject.GetComponent<TrailRenderer>().emitting = true;
                 SoundManager.Singleton.Play("boost1");
             }
         }
@@ -185,12 +189,14 @@ public class PlayerController : MonoBehaviour
             else
             {
                 this.MovementSpeed = this.PreviousMovementSpeed;
+                this.gameObject.GetComponent<TrailRenderer>().emitting = false;
             }
         }
 
         if (Input.GetButtonUp("Fire3"))
         {
             this.MovementSpeed = this.PreviousMovementSpeed;
+            this.gameObject.GetComponent<TrailRenderer>().emitting = false;
         }        
     }
 }
