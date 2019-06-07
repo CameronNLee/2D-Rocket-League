@@ -59,20 +59,46 @@ public class PlayerController : MonoBehaviour
     }
     
     void OnCollisionEnter(Collision collision)
+    {
+        // Here, we handle what happens when the player kicks the ball.
+        // Upon doing so, simply get the direction of the player,
+        // multiply that by the KickForce (adjustable float declared above),
+        // and assign that to be the ball's new velocity.
+        if (collision.gameObject.tag == "SmallEnergyBall")
         {
-            // Here, we handle what happens when the player kicks the ball.
-            // Upon doing so, simply get the direction of the player,
-            // multiply that by the KickForce (adjustable float declared above),
-            // and assign that to be the ball's new velocity.
-            if (collision.gameObject.name == "ball" || collision.gameObject.name == "ball(Clone)")
+            Destroy(collision.gameObject);
+            EnergyChange(10);
+        }
+        if (collision.gameObject.tag == "MediumEnergyBall")
+        {
+            Destroy(collision.gameObject);
+            EnergyChange(20);
+        }
+        if (collision.gameObject.tag == "LargeEnergyBall")
+        {
+            Destroy(collision.gameObject);
+            EnergyChange(50);
+        }
+        if (collision.gameObject.name == "ball" || collision.gameObject.name == "ball(Clone)")
+        {
+            var rigidBody = collision.gameObject.GetComponent<Rigidbody>();
+            if (rigidBody)
             {
-                var rigidBody = collision.gameObject.GetComponent<Rigidbody>();
-                if (rigidBody)
-                {
-                    Debug.Log ("Collision!");
-                    Vector3 direction = (collision.transform.position - this.transform.position).normalized;
-                    rigidBody.velocity = direction * this.KickForce;
-                }
+                Debug.Log ("Collision!");
+                Vector3 direction = (collision.transform.position - this.transform.position).normalized;
+                rigidBody.velocity = direction * this.KickForce;
             }
         }
+     }
+
+    void EnergyChange(int amount)
+    {
+        float currentEnergyFillAmount = this.Energy.GetComponent<Image>().fillAmount;
+        var addEnergyAmount = 0.01f * amount;
+   
+        this.Energy.GetComponent<Image>().fillAmount = (currentEnergyFillAmount+addEnergyAmount) < 1 ? (currentEnergyFillAmount + addEnergyAmount) : 1;
+        int energy = int.Parse(EnergyText.text);
+        EnergyText.text = ((energy + amount) < 100 ? (energy + amount) : 100).ToString();
+        EnergySpawner.count--;
+    }
 }
