@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
+        // Player 1 uses arrow key movements while Player 2 uses WASD.
         if (!PlayerNumberTwo)
         {
             this.PlayerOneMovement.Execute(this.gameObject);
