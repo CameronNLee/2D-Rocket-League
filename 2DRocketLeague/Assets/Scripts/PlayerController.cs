@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float MovementSpeed;
 
     private float PreviousMovementSpeed;
+    private float PreviousKickForce;
     
     private IPlayerCommand Forward;
     private IPlayerCommand PlayerTwoMovement;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
         // this.KickForce = 30.0f;
         // this.MovementSpeed = 50.0f;
         this.PreviousMovementSpeed = this.MovementSpeed;
+        this.PreviousKickForce = this.KickForce;
         this.CurrentPhase = Phase.None;
     }
 
@@ -131,6 +133,7 @@ public class PlayerController : MonoBehaviour
             {
                 SoundManager.Singleton.Play("boost1");
                 this.gameObject.GetComponent<TrailRenderer>().emitting = true;
+                this.KickForce = this.PreviousKickForce * 2;
             }
         }
         
@@ -149,12 +152,14 @@ public class PlayerController : MonoBehaviour
             else
             {
                 this.MovementSpeed = this.PreviousMovementSpeed;
+                this.KickForce = this.PreviousKickForce;
                 this.gameObject.GetComponent<TrailRenderer>().emitting = false;
             }
         }
         if (Input.GetButtonUp("Jump"))
         {
             this.MovementSpeed = this.PreviousMovementSpeed;
+            this.KickForce = this.PreviousKickForce;
             this.gameObject.GetComponent<TrailRenderer>().emitting = false;
         }
     }
@@ -170,6 +175,7 @@ public class PlayerController : MonoBehaviour
             if (residualEnergy != 0)
             {
                 this.gameObject.GetComponent<TrailRenderer>().emitting = true;
+                this.KickForce = this.PreviousKickForce * 2;
                 SoundManager.Singleton.Play("boost1");
             }
         }
@@ -189,6 +195,7 @@ public class PlayerController : MonoBehaviour
             else
             {
                 this.MovementSpeed = this.PreviousMovementSpeed;
+                this.KickForce = this.PreviousKickForce;
                 this.gameObject.GetComponent<TrailRenderer>().emitting = false;
             }
         }
@@ -196,6 +203,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonUp("Fire3"))
         {
             this.MovementSpeed = this.PreviousMovementSpeed;
+            this.KickForce = this.PreviousKickForce;
             this.gameObject.GetComponent<TrailRenderer>().emitting = false;
         }        
     }
