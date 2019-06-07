@@ -24,8 +24,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Energy;
     public Text EnergyText;
-
-
+    
+    private enum Phase {Boost, Normal, None};
+    private Phase CurrentPhase;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
         // this.KickForce = 30.0f;
         // this.MovementSpeed = 50.0f;
         this.PreviousMovementSpeed = this.MovementSpeed;
+        this.CurrentPhase = Phase.None;
     }
 
     // Update is called once per frame
@@ -68,16 +70,19 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(collision.gameObject);
             EnergyChange(10);
+            SoundManager.Singleton.Play("pickup1");
         }
         if (collision.gameObject.tag == "MediumEnergyBall")
         {
             Destroy(collision.gameObject);
             EnergyChange(20);
+            SoundManager.Singleton.Play("pickup1");
         }
         if (collision.gameObject.tag == "LargeEnergyBall")
         {
             Destroy(collision.gameObject);
             EnergyChange(50);
+            SoundManager.Singleton.Play("pickup1");
         }
         
         // Here, we handle what happens when the player kicks the ball.
@@ -92,7 +97,14 @@ public class PlayerController : MonoBehaviour
                 Debug.Log ("Collision!");
                 Vector3 direction = (collision.transform.position - this.transform.position).normalized;
                 rigidBody.velocity = direction * this.KickForce;
+                SoundManager.Singleton.Play("ball_kick1");
             }
+        }
+
+        if (collision.gameObject.name == "player2" || collision.gameObject.name == "player1")
+        {
+            Debug.Log("Player collision");
+            SoundManager.Singleton.Play("car_collision");
         }
     }
     
@@ -109,6 +121,18 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerOneBoost()
     {
+        // Only so that the boost sound effect plays once when you hold the button.
+        // Probably a better idea to use the enum Phase and play the sound effect
+        // based on what phase you're in instead.
+        if (Input.GetButtonDown("Jump"))
+        {
+            var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
+            if (residualEnergy != 0)
+            {
+                SoundManager.Singleton.Play("boost1");
+            }
+        }
+        
         if (Input.GetButton("Jump"))
         {
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
@@ -134,6 +158,18 @@ public class PlayerController : MonoBehaviour
 
     private void PlayerTwoBoost()
     {
+        // Only so that the boost sound effect plays once when you hold the button.
+        // Probably a better idea to use the enum Phase and play the sound effect
+        // based on what phase you're in instead.
+        if (Input.GetButtonDown("Fire3"))
+        {
+            var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
+            if (residualEnergy != 0)
+            {
+                SoundManager.Singleton.Play("boost1");
+            }
+        }
+        
         if (Input.GetButton("Fire3"))
         {
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;

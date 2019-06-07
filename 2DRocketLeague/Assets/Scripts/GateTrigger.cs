@@ -15,6 +15,7 @@ public class GateTrigger : MonoBehaviour
 
             // Destory the current ball
             Destroy(collision.gameObject);
+            SoundManager.Singleton.Play("score2");
 
             // Update team score
             int score = int.Parse(teamScore.text);

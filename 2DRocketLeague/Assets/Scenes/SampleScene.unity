@@ -1580,33 +1580,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundFiles:
-  - Filename: 
-    SoundClip: {fileID: 0}
-    Volume: 0
+  - Filename: car_collision
+    SoundClip: {fileID: 8300000, guid: cad1f1400c8c1634da3680c333e3d9e7, type: 3}
+    Volume: 0.053
     Source: {fileID: 0}
     IsLooping: 0
     PlayOnAwake: 0
-  - Filename: 
-    SoundClip: {fileID: 0}
-    Volume: 0
+  - Filename: ball_kick1
+    SoundClip: {fileID: 8300000, guid: f3ef66d3f2dae9448866dfb5f6428111, type: 3}
+    Volume: 0.239
     Source: {fileID: 0}
     IsLooping: 0
     PlayOnAwake: 0
-  - Filename: 
-    SoundClip: {fileID: 0}
-    Volume: 0
+  - Filename: score2
+    SoundClip: {fileID: 8300000, guid: b27116b4ce87eca4bbd049978bf2e893, type: 3}
+    Volume: 0.457
     Source: {fileID: 0}
     IsLooping: 0
     PlayOnAwake: 0
-  - Filename: 
-    SoundClip: {fileID: 0}
-    Volume: 0
+  - Filename: boost1
+    SoundClip: {fileID: 8300000, guid: a20523078206ec04a9aaf3ba85c09d98, type: 3}
+    Volume: 0.343
     Source: {fileID: 0}
     IsLooping: 0
     PlayOnAwake: 0
-  - Filename: 
-    SoundClip: {fileID: 0}
-    Volume: 0
+  - Filename: bg_music
+    SoundClip: {fileID: 8300000, guid: 6299432c7c2ebf04ebbbac6921e37ab4, type: 3}
+    Volume: 0.263
+    Source: {fileID: 0}
+    IsLooping: 1
+    PlayOnAwake: 1
+  - Filename: pickup1
+    SoundClip: {fileID: 8300000, guid: a675d7990b3dc3f46a59a39e8a3c915b, type: 3}
+    Volume: 0.422
     Source: {fileID: 0}
     IsLooping: 0
     PlayOnAwake: 0
