@@ -64,25 +64,27 @@
     <Compile Include="Assets\Scripts\MainCameraController.cs" />
     <Compile Include="Assets\Scripts\MoveForward.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerOneMovement.cs" />
     <Compile Include="Assets\Scripts\Players.cs" />
+    <Compile Include="Assets\Scripts\PlayerTwoMovement.cs" />
     <Compile Include="Assets\Scripts\ScrollText.cs" />
     <Compile Include="Assets\Scripts\ScrollTextManager.cs" />
-    <Compile Include="Assets\Scripts\TurnPlayerLeft.cs" />
-    <Compile Include="Assets\Scripts\TurnPlayerRight.cs" />
+    <Compile Include="Assets\Scripts\SoundFile.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -286,13 +288,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/ucdavis/ECS 189L/Finalproject/ECS189L-Project/2DRocketLeague/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/ucdavis/ECS 189L/Finalproject/LatestVersion/ECS189L-Project/2DRocketLeague/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.11f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
