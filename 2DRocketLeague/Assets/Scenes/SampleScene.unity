@@ -207,6 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Energy: {fileID: 0}
   EnergyText: {fileID: 0}
+  KickForce: 0
 --- !u!50 &146101999
 Rigidbody2D:
   serializedVersion: 4
@@ -1929,6 +1930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Energy: {fileID: 0}
   EnergyText: {fileID: 0}
+  KickForce: 0
 --- !u!65 &1617607356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2159,6 +2161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Energy: {fileID: 1108242350}
   EnergyText: {fileID: 1108478402}
+  KickForce: 0
 --- !u!96 &1728216532
 TrailRenderer:
   serializedVersion: 2
@@ -2750,7 +2753,7 @@ PrefabInstance:
     - target: {fileID: 8697860888728105497, guid: d53a5825417eef448bd3841941423829,
         type: 3}
       propertyPath: m_Drag
-      value: 100
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d53a5825417eef448bd3841941423829, type: 3}
