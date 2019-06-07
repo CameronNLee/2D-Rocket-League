@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ball
+  - SmallEnergyBall
+  - MediumEnergyBall
+  - LargeEnergyBall
   layers:
   - Default
   - TransparentFX

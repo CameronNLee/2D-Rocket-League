@@ -1804,6 +1804,55 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 114525971066054378, guid: f25ef3d959b265a44b7b3c601a405aa9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f25ef3d959b265a44b7b3c601a405aa9, type: 3}
+--- !u!1 &1607489816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607489818}
+  - component: {fileID: 1607489817}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1607489817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607489816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b58b181e6f6bd64384ecff837b4cc33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrefabSmall: {fileID: 119061136820952694, guid: 8676afbc13f02224b887e448b74e3cbf,
+    type: 3}
+  PrefabMedium: {fileID: 2163842603093353953, guid: 9fbbef451c778c64480ef72c9da07a13,
+    type: 3}
+  PrefabLarge: {fileID: 1758657527034684294, guid: 0a85d3cbbdb948446a9d6d8fe33d6e4b,
+    type: 3}
+--- !u!4 &1607489818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607489816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.835415, y: 3.5185306, z: -10.36241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617607350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,7 +2161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728216526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.36, y: -1.36, z: -1}
+  m_LocalPosition: {x: 21.9, y: 13, z: -1}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
