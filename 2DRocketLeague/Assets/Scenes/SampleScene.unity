@@ -2062,6 +2062,12 @@ MonoBehaviour:
     Source: {fileID: 0}
     IsLooping: 0
     PlayOnAwake: 0
+  - Filename: none
+    SoundClip: {fileID: 0}
+    Volume: 0
+    Source: {fileID: 0}
+    IsLooping: 0
+    PlayOnAwake: 0
 --- !u!4 &1220390701
 Transform:
   m_ObjectHideFlags: 0
@@ -2920,7 +2926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728216526}
   m_LocalRotation: {x: -0, y: -0, z: 0.30692694, w: 0.9517331}
-  m_LocalPosition: {x: -3.6, y: -2.1, z: -1}
+  m_LocalPosition: {x: -3.5, y: -2.1, z: -1}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
