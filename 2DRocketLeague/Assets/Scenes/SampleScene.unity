@@ -2069,7 +2069,7 @@ MonoBehaviour:
   KickForce: 30
   MovementSpeed: 30
   Energy: {fileID: 737437296}
-  EnergyText: {fileID: 1908131259}
+  EnergyText: {fileID: 1976358935}
 --- !u!65 &1617607356
 BoxCollider:
   m_ObjectHideFlags: 0

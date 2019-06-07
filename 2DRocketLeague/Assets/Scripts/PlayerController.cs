@@ -48,37 +48,18 @@ public class PlayerController : MonoBehaviour
         // Player 1 uses arrow key movements while Player 2 uses WASD.
         if (!PlayerNumberTwo)
         {
+            this.PlayerOneBoost();
             this.PlayerOneMovement.Execute(this.gameObject);
         }
         else
         {
+            this.PlayerTwoBoost();
             this.PlayerTwoMovement.Execute(this.gameObject);
             
         }
         
         // Accelerate button to actually start moving in direction you are facing.
-        if (Input.GetButton("Fire3"))
-        {
-            var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
-            if (residualEnergy != 0)
-            {
-                residualEnergy -= 0.01f;
-                var value = (residualEnergy * 100);
-                this.Energy.GetComponent<Image>().fillAmount = residualEnergy > 0 ? residualEnergy : 0;
-                this.EnergyText.text = (Mathf.Ceil(residualEnergy * 100)).ToString();
-                // this.Accelerate.Execute(this.gameObject);
-                this.MovementSpeed = this.PreviousMovementSpeed * 2;
-            }
-            else
-            {
-                this.MovementSpeed = this.PreviousMovementSpeed;
-            }
-        }
 
-        if (Input.GetButtonUp("Fire3"))
-        {
-            this.MovementSpeed = this.PreviousMovementSpeed;
-        }
     }
     
     void OnCollisionEnter(Collision collision)
@@ -124,5 +105,56 @@ public class PlayerController : MonoBehaviour
         int energy = int.Parse(EnergyText.text);
         EnergyText.text = ((energy + amount) < 100 ? (energy + amount) : 100).ToString();
         EnergySpawner.count--;
+    }
+
+    private void PlayerOneBoost()
+    {
+        if (Input.GetButton("Jump"))
+        {
+            var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
+            if (residualEnergy != 0)
+            {
+                residualEnergy -= 0.01f;
+                var value = (residualEnergy * 100);
+                this.Energy.GetComponent<Image>().fillAmount = residualEnergy > 0 ? residualEnergy : 0;
+                this.EnergyText.text = (Mathf.Ceil(residualEnergy * 100)).ToString();
+                // this.Accelerate.Execute(this.gameObject);
+                this.MovementSpeed = this.PreviousMovementSpeed * 2;
+            }
+            else
+            {
+                this.MovementSpeed = this.PreviousMovementSpeed;
+            }
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            this.MovementSpeed = this.PreviousMovementSpeed;
+        }
+    }
+
+    private void PlayerTwoBoost()
+    {
+        if (Input.GetButton("Fire3"))
+        {
+            var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
+            if (residualEnergy != 0)
+            {
+                residualEnergy -= 0.01f;
+                var value = (residualEnergy * 100);
+                this.Energy.GetComponent<Image>().fillAmount = residualEnergy > 0 ? residualEnergy : 0;
+                this.EnergyText.text = (Mathf.Ceil(residualEnergy * 100)).ToString();
+                // this.Accelerate.Execute(this.gameObject);
+                this.MovementSpeed = this.PreviousMovementSpeed * 2;
+            }
+            else
+            {
+                this.MovementSpeed = this.PreviousMovementSpeed;
+            }
+        }
+
+        if (Input.GetButtonUp("Fire3"))
+        {
+            this.MovementSpeed = this.PreviousMovementSpeed;
+        }        
     }
 }
