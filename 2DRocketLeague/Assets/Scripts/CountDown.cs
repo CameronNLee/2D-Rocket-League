@@ -61,6 +61,10 @@ public class CountDown : MonoBehaviour
         }
         else
         {
+            if (minutes < 1)
+            {
+                textbox.color = Color.red;
+            }
             if (sec >= 10)
             {
                 textbox.text = "0" + minutes + ":" + sec;

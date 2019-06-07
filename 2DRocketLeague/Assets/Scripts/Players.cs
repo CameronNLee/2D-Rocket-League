@@ -55,7 +55,7 @@ public class Players : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.F))  // Boost for player 2
         {
-            print("boost player 2");
+           // print("boost player 2");
         }
     }
     void ProcessMovementForPlayerOne()
@@ -82,7 +82,7 @@ public class Players : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.L))  // boost for Player 1
         {
-            print("boost player 1");
+           // print("boost player 1");
         }
 
 
