@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &132180441 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8697860888728105492, guid: d53a5825417eef448bd3841941423829,
-    type: 3}
-  m_PrefabInstance: {fileID: 8697860888788130353}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &146101995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,7 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1617607350}
-  newBall: {fileID: 132180441}
+  newBall: {fileID: 8697860888728105492, guid: d53a5825417eef448bd3841941423829, type: 3}
   teamScore: {fileID: 1908131259}
 --- !u!1 &928486646
 GameObject:
@@ -2044,7 +2038,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!135 &1617607354
 SphereCollider:
@@ -2381,7 +2375,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 1
 --- !u!135 &1728216530
 SphereCollider:
@@ -3005,6 +2999,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Drag
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697860888728105497, guid: d53a5825417eef448bd3841941423829,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8697860888728105497, guid: d53a5825417eef448bd3841941423829,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d53a5825417eef448bd3841941423829, type: 3}

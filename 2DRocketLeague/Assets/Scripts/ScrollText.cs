@@ -11,7 +11,6 @@ public class ScrollText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Update move!");
         float translation = speed * Time.deltaTime;
         transform.Translate(direction * translation);
 

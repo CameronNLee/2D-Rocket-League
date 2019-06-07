@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
             var rigidBody = collision.gameObject.GetComponent<Rigidbody>();
             if (rigidBody)
             {
-                Debug.Log ("Collision!");
+               
                 Vector3 direction = (collision.transform.position - this.transform.position).normalized;
                 rigidBody.velocity = direction * this.KickForce;
                 SoundManager.Singleton.Play("ball_kick1");
@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.name == "player2" || collision.gameObject.name == "player1")
         {
-            Debug.Log("Player collision");
+            
             SoundManager.Singleton.Play("car_collision");
         }
     }

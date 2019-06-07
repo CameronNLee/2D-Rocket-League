@@ -13,6 +13,10 @@ public class GateTrigger : MonoBehaviour
         {
             ScrollTextManager.Instance.CreateText(player.transform.position, "+1", Color.yellow, 20);
 
+            // Instantiate a new ball
+            Vector3 startPoint = new Vector3(0, 0, -1);
+            Instantiate(newBall, startPoint, Quaternion.identity);
+
             // Destory the current ball
             Destroy(collision.gameObject);
             SoundManager.Singleton.Play("score2");
@@ -22,9 +26,10 @@ public class GateTrigger : MonoBehaviour
             score++;
             teamScore.text = score.ToString();
 
-            // Instantiate a new ball
-            Vector3 startPoint = new Vector3(0, 0, -1);
-            Instantiate(newBall, startPoint, Quaternion.identity);
+            
+           
+           
+           
         }
     }
 }
