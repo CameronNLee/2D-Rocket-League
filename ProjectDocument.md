@@ -222,7 +222,11 @@ are made to emphasize that feel, while the more mundane sounds like the ball bei
 
 **Add a link to the full results of your gameplay tests.**
 
+https://docs.google.com/forms/d/1TLqhXBkHoL1-e15zkhrhCoo36_v0tn9G1K_VUt4mpUg/edit?usp=sharing_eil&ts=5cfcae45
+
 **Summarize the key findings from your gameplay tests.**
+
+Overall, most praise was directed towards the simplicity yet fun design involved with the gameplay. People enjoyed the boosting mechanic as well as the collisions system. However, many criticisms were made towards how the ball would often get stuck in the corners of the barriers, as well as player movement being sluggish. These gameplay testing results were taken into account for the final product.
 
 ## Narrative Design
 
