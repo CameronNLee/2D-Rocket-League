@@ -32,6 +32,16 @@ You should replay any **bold text** with your own relevant information. Liberall
 
 **Describe the basics of movement and physics in your game. Is it the standard physics model? What did you change or modify? Did you make your own movement scripts that do not use the phyics system?**
 
+For the most part, our project made use of the Unity physics system. Even though our game is shown from a 2D top-down
+perspective, looking at the editor and the code itself shows that we used Unity's 3D physics engine. The game makes use of
+rigid bodies and sphere colliders as a means of handling movement and game logic. Movement is more or less constricted to
+the 2 dimensional plane where players are able to move in free-form directions via arrow keys.
+
+Player physics involves not only this movement, but also their boosting movement as well. When a player decides to boost,
+they receive a x2 speed increase through the RigidBody AddForce() method in whatever direction the player pressed. One
+interesting gameplay consequence of this was to have double the kick force applied to the ball when a player boosts into it.
+If a player were to normally collide into the ball, however, then the ball gets kicked a smaller distance.
+
 ## Animation and Visuals
 
 **List your assets including their sources, and licenses.**
@@ -101,6 +111,9 @@ When player score a goal:
 
 **Document what game states and game data you managed and what design patterns you used to complete your task.**
 
+For our game, we implemented the command pattern for player input as well as the singleton pattern for handling sound
+(see below under Audio sub-role for more details).
+
 # Sub-Roles
 
 ## Audio
@@ -109,7 +122,12 @@ When player score a goal:
 
 **Describe the implementation of your audio system.**
 
+For the handling of audio assets, our project opted for a singleton manager pattern implemented in a script called SoundManager.cs. The rationale for doing so was to have an easy and seamless way to execute code related to sound files at any script at any point in the project. In essence, the script acts as a way to handle global variables related to playing/stopping sound assets. An additional benefit is being able to do this across scenes: the pattern allows for the inclusion/exclusion of sound without the data being destroyed.
+
 **Document the sound style.** 
+The sound style opts for a slightly more realistic set of acoustics. We wanted to go for a light sci-fi feel, something
+somewhat grounded within reality. As such, sounds like the one that plays when a player boosts or picks up an energy orb
+are made to emphasize that feel, while the more mundane sounds like the ball being kicked emphasizes the realistic feel.
 
 ## Gameplay Testing
 
