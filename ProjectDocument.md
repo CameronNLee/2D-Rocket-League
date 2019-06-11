@@ -32,10 +32,12 @@ You should replay any **bold text** with your own relevant information. Liberall
 
 **Describe the basics of movement and physics in your game. Is it the standard physics model? What did you change or modify? Did you make your own movement scripts that do not use the phyics system?**
 
-For the most part, our project made use of the Unity physics system. Even though our game is shown from a 2D top-down
-perspective, looking at the editor and the code itself shows that we used Unity's 3D physics engine. The game makes use of
-rigid bodies and sphere colliders as a means of handling movement and game logic. Movement is more or less constricted to
-the 2 dimensional plane where players are able to move in free-form directions via arrow keys.
+Our project made use of the Unity physics system and did not deviate much from it. Even though our game is shown from a 2D top-down perspective, looking at the editor and the code itself shows that we used Unity's 3D physics engine. The game makes use of
+rigid bodies and sphere colliders as a means of handling movement and game logic. These components helped us tweak the game
+feel and physics by setting drag and mass values. Giving the soccer ball a higher drag value helped stop the feeling that
+it was "floating," for example.
+
+Our physics implementation also handled collisions between game objects. When a player collides with a ball, a kick force value is applied to the ball in the direction the player collided with the ball. If the kicked ball collides with the out of bounds areas of the playing field, it is merely repelled back with a barrier force value back into the playing field. 
 
 Player physics involves not only this movement, but also their boosting movement as well. When a player decides to boost,
 they receive a x2 speed increase through the RigidBody AddForce() method in whatever direction the player pressed. One
