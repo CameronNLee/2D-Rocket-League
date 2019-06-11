@@ -38,7 +38,7 @@ You should replay any **bold text** with your own relevant information. Liberall
 
 All assets used in our game:
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project//master/Screenshots/assets.PNG)
+![ScreenShot](Screenshots/assets.PNG)
 
 Assets list:
 
@@ -47,7 +47,7 @@ TO BE DONE
 
 Game Scene:
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project/master/Screenshots/game_scene.PNG)
+![ScreenShot](Screenshots/game_scene.PNG)
 
 
 **Animation**
@@ -56,34 +56,34 @@ Boost animation:
 
 player1 boost animation:
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project/master/Screenshots/boost_1.PNG)
+![ScreenShot](Screenshots/boost_1.PNG)
 
 player2 boost animation:
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project/master/Screenshots/boost_2.PNG)
+![ScreenShot](Screenshots/boost_2.PNG)
 
 
 Countdown Timer animation:
 
 Timer:
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project/master/Screenshots/boost_2.PNG)
+![ScreenShot](Screenshots/timer.PNG)
 
 Timer(alarming):
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project/master/Screenshots/boost_2.PNG)
+![ScreenShot](Screenshots/timer(alarm).PNG)
 
 
 Energy bar animation:
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project/master/Screenshots/energy_bar.PNG)
+![ScreenShot](Screenshots/energy_bar.PNG)
 
 
 Scrolling Text:
 
 When player score a goal:
 
-![ScreenShot](https://raw.github.com/CameronNLee/ECS189L-Project/master/Screenshots/score_a_goal.PNG)
+![ScreenShot](Screenshots/score_a_goal.PNG)
 
 
 
