@@ -222,11 +222,7 @@ are made to emphasize that feel, while the more mundane sounds like the ball bei
 
 **Add a link to the full results of your gameplay tests.**
 
-https://docs.google.com/forms/d/1TLqhXBkHoL1-e15zkhrhCoo36_v0tn9G1K_VUt4mpUg/edit?usp=sharing_eil&ts=5cfcae45
-
 **Summarize the key findings from your gameplay tests.**
-
-Overall, most praise was directed towards the simplicity yet fun design involved with the gameplay. People enjoyed the boosting mechanic as well as the collisions system. However, many criticisms were made towards how the ball would often get stuck in the corners of the barriers, as well as player movement being sluggish. These gameplay testing results were taken into account for the final product.
 
 ## Narrative Design
 
@@ -236,7 +232,9 @@ The minimalist stylings of the player sprites allow the player to easliy project
 
 ## Press Kit and Trailer
 
-**Include links to your presskit materials and trailer.**
+Here is the link for the presskit trailer https://www.youtube.com/watch?v=A5fU-YrMaYU.
+
+The presskit was made in Microsoft Word and exported as a pdf. The movie trailer was made in iMovie. The style of trailer I was going for was an over-the-top action thriller type trailer that was fun and fast-paced with a dramatic story line. I was able to find people on fiverr to do a voice over and also to do the logo design, as I am not an artist nor a (female british) voice actor. For the images in the trailer I found a website that has free stock, non-copyrighted images with a healthy selection of almost anything you can imagine. All sounds and music in the trailer (and in the game) were also obtained from free non-copyrighted, open-source sound websites. This combination of materials made for a fun and satisfying trailer and press kit alike. However, I was rather rushed in the trailer (I didnt wan't the youtube upload to fail) and so the editing was not the best it could be in my opinion. I meant to show the person's silhouette with the space background when the actress says "the only one that can save us is you" I might make another one if you are interested in it, even though it will be past the due date. For the press kit I based it off the examples given to us in class.
 
 **Describe how you showcased your work. How did you choose what to show in the trailer? Why did you choose your screenshots?**
 
