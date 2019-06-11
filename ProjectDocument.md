@@ -163,10 +163,22 @@ License: No free license, for educational purpose only.
 ## Input
 
 **Describe the default input configuration.**
+Since our game was designed to be an arcade-style game, our default input configuration was pretty standard,
+i.e. the player control movements are entirely controlled by four arrow keys, one for each direction as in many
+2-dimensional platformer or arcade-style games. Since this is a multiplayer game (up to 2 players), and since our
+input controllers is the keyboard itself, the second-player controls are the also standard WASD controller movements.
+(W - up, A - left, S - down, D - right). While we can configure the input to be controllers like an X-Box or Playstation
+controllers (which would also allow for more players to be able to play at once) the game is currently set up to be played
+entirely on a computer/keyboard setup. Besides just player movement controlled by four keys per player, there is also a
+'boost' button which allows the players to speed up during movement when held down (if there is boost available).
+For player one (arrow key input) the boost button is the spacebar. For player two (wasd input), the boost button is the left
+'Shift' key. While I was in charge of input, I also helped create the player movement controller script, which felt smoother
+than the original script, and which was later implemented as the final version of the player movement controller script.
+
 
 **Add an entry for each platform or input style your project supports.**
 
-## Game Logic
+Our game is currently supported for the PC and Mac platforms.
 
 **Document what game states and game data you managed and what design patterns you used to complete your task.**
 
