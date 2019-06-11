@@ -51,60 +51,99 @@ If a player were to normally collide into the ball, however, then the ball gets 
 
 ## Animation and Visuals
 
+**A brief description**
+
+Create assets needed for our game and take this video (https://www.youtube.com/watch?v=UjqWUmmoq-E&t=170s) as an reference to complete the design of the game scene. Use a little bit exaggerated graphics visual style when set the ratio of players, soccer balls, and soccer fields.
+
+**Intersects with game feel:**
+
+See the 5,6,7,8 points in game feel part.
+
 **List your assets including their sources, and licenses.**
 
-All assets used in our game:
+**All assets used in our game:**
 
 ![ScreenShot](Screenshots/assets.PNG)
 
-Assets list:
+**Assets list:**
 
-TO BE DONE
+**Downloaded online:**
+
+football field(modified).jpg
+
+comment: This assets have been modified by myself.
+
+Source: http://www.16pic.com/vector/pic_1244046.html
+
+License: No free license, for educational purpose only. 
+
+ **Assets made by myself (see sprites folder):**
+
+  player1.PNG
+
+  player2.PNG
+
+  honeycomb.png
+
+  energy_icon.png
+
+  LargeEnergyBall.png
+
+  MediumEnergyBall.png
+
+  SmallEnergyBall.png
+
+  panel.png
+
+  White-square.jpg
+
+  ball.png
+
+  score_blue.png
+
+  score_red.png
+
+  soccer field.jpeg
 
 
-Game Scene:
+**Design of the Game Scene:**
 
 ![ScreenShot](Screenshots/game_scene.PNG)
 
 
 **Animation**
 
-Boost animation:
+**Boost animation:**
 
-player1 boost animation:
+ - player1 boost animation:                    
 
-![ScreenShot](Screenshots/boost_1.PNG)
+<img src="Screenshots/boost_1.PNG" width="200" hegith="80">      
 
-player2 boost animation:
+ - player2 boost animation:
 
-![ScreenShot](Screenshots/boost_2.PNG)
-
-
-Countdown Timer animation:
-
-Timer:
-
-![ScreenShot](Screenshots/timer.PNG)
-
-Timer(alarming):
-
-![ScreenShot](Screenshots/timer(alarm).PNG)
+<img src="Screenshots/boost_2.PNG" width="200" hegith="80">
 
 
-Energy bar animation:
+**Countdown Timer animation:**
 
-![ScreenShot](Screenshots/energy_bar.PNG)
+ - Timer:
+
+<img src="Screenshots/timer.PNG" width="200" hegith="80">
+
+ - Timer(alarming):
+
+<img src="Screenshots/timer(alarm).PNG" width="200" hegith="80">
+
+**Energy bar animation:**
+
+<img src="Screenshots/energy_bar.PNG" width="200" hegith="80
 
 
-Scrolling Text:
+**Scrolling Text:**
 
-When player score a goal:
+ - When player score a goal:
 
-![ScreenShot](Screenshots/score_a_goal.PNG)
-
-
-
-**Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
+<img src="Screenshots/score_a_goal.PNG" width="200" hegith="80">
 
 
 
