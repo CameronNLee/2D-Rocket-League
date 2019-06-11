@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 
     private float PreviousMovementSpeed;
     private float PreviousKickForce;
+    private bool BoostIsHeld;
     
     private IPlayerCommand PlayerTwoMovement;
     private IPlayerCommand PlayerOneMovement;
@@ -33,6 +34,8 @@ public class PlayerController : MonoBehaviour
 
         this.PreviousMovementSpeed = this.MovementSpeed;
         this.PreviousKickForce = this.KickForce;
+
+        this.BoostIsHeld = false;
     }
 
     // Update is called once per frame/
@@ -49,6 +52,14 @@ public class PlayerController : MonoBehaviour
         {
             this.PlayerTwoBoost();
             this.PlayerTwoMovement.Execute(this.gameObject);   
+        }
+        
+        var replenishingEnergy = this.Energy.GetComponent<Image>().fillAmount;
+        if (!this.BoostIsHeld)
+        {
+            replenishingEnergy += 0.0001f;
+            this.Energy.GetComponent<Image>().fillAmount = (replenishingEnergy * 100 < 100) ? replenishingEnergy : 100;
+            this.EnergyText.text = (Mathf.Floor(replenishingEnergy * 100)).ToString();
         }
     }
     
@@ -82,7 +93,6 @@ public class PlayerController : MonoBehaviour
             var rigidBody = collision.gameObject.GetComponent<Rigidbody>();
             if (rigidBody)
             {
-               
                 Vector3 direction = (collision.transform.position - this.transform.position).normalized;
                 rigidBody.velocity = direction * this.KickForce;
                 SoundManager.Singleton.Play("ball_kick1");
@@ -111,6 +121,7 @@ public class PlayerController : MonoBehaviour
         // Only so that the boost sound effect plays once when you hold the button.
         if (Input.GetButtonDown("Jump"))
         {
+            this.BoostIsHeld = true;
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
             if (residualEnergy != 0)
             {
@@ -122,6 +133,7 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetButton("Jump"))
         {
+            this.BoostIsHeld = true;
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
             if (residualEnergy != 0)
             {
@@ -140,6 +152,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetButtonUp("Jump"))
         {
+            this.BoostIsHeld = false;
             this.MovementSpeed = this.PreviousMovementSpeed;
             this.KickForce = this.PreviousKickForce;
             this.gameObject.GetComponent<TrailRenderer>().emitting = false;
@@ -151,6 +164,7 @@ public class PlayerController : MonoBehaviour
         // Only so that the boost sound effect plays once when you hold the button.
         if (Input.GetButtonDown("Fire3"))
         {
+            this.BoostIsHeld = true;
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
             if (residualEnergy != 0)
             {
@@ -162,6 +176,7 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetButton("Fire3"))
         {
+            this.BoostIsHeld = true;
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
             if (residualEnergy != 0)
             {
@@ -181,6 +196,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonUp("Fire3"))
         {
+            this.BoostIsHeld = false;
             this.MovementSpeed = this.PreviousMovementSpeed;
             this.KickForce = this.PreviousKickForce;
             this.gameObject.GetComponent<TrailRenderer>().emitting = false;
