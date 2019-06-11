@@ -222,7 +222,18 @@ are made to emphasize that feel, while the more mundane sounds like the ball bei
 
 **Add a link to the full results of your gameplay tests.**
 
+The full results is in this repo as a zip folder.
+
 **Summarize the key findings from your gameplay tests.**
+
+The main thing we found out was that most people complained about a literal corner case: when the ball hits the corner and gets stuck there. It takes a bit of effort from the player to get the ball out of the corner, and most people found that very irritating.
+
+On the other hand, most people enjoyed the game, commenting that the really liked the physics of it, and how simple and intuitive it was to play the game (no complicated instructions needed).
+
+With relation to the boost mechanic, players felt like it should refill over time (if both players have no boosts left, it turns the game into a bit of a slog), and essentially forced the players to abandon the main goal of the game (scoring goals) in order to refill their boost gauge.
+
+Lastly, people wanted the base speed of the game to be faster; it seemed like people got used to "boost mode" too much, and in comparison, the default speed of the players felt too slow.
+
 
 ## Narrative Design
 
