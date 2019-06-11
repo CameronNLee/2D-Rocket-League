@@ -67,6 +67,14 @@ Create assets needed for our game and take this video (https://www.youtube.com/w
 
 See the 5,6,7,8 points in game feel part.
 
+ > 5. Add a "head" to the player's sprite, and implement a RotationLerp() function to make the head face the direction in which the player is moving towards. Since we finally decided to use WASD to make movement, it would provide the player a better sence of control.
+
+ > 6. Change the Timer's text color from Color.Black to Color.Red when there's only one minute left.  
+
+ > 7. Add color to the gate. When doing game testing, we find that some students were confused about which gate they should shoot to at the very begining. By adding the same color of the player to the gate, this problem will no longer exist.
+ 
+ > 8. Add boosting sould/animation to make the process more visible to player. 
+
 **List your assets including their sources, and licenses.**
 
 **All assets used in our game:**
@@ -221,7 +229,7 @@ are made to emphasize that feel, while the more mundane sounds like the ball bei
 
  1. Use WASD (arror keys) to control instead of using A/D (Left/Right keys) to rotate along with W(Up arror key) to move forward, which makes the player much easier to control. 
  
- 2. Introduce a Energy System to the game. We got this idea from some other soccer game. The energy system introduce variables to the player's speed. They can now use their own strategy to decide when/how much they would like to use energy to boost in order to make a good kick/defense.
+ 2. Implement a Energy System which introduce variables to the player's speed. The players can now use their own strategy to decide when/how much they would like to use energy to boost in order to make a good kick/defense.
 
     We also implement 2 ways of energy recharging:
 
