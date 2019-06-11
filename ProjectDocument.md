@@ -4,6 +4,8 @@
 
 **A paragraph-length pitch for your game.**
 
+In the distant future, Earth has been overtaken by alien invaders. However, they agree to allow their human captives freedom on one condition: challenge each other in one-on-one games of vehicular soccer! In 2D Rocket League, challenge your friends in epic, fast paced 2D action as you try to outmanuever each other and score goals. Utilize the boost to strategically outpace your opponents and swoop in for quick goals. In 2D Rocket League, the action is always fast and fresh!
+
 ## Gameplay explanation ##
 
 **In this section, explain how the game should be played. Treat this like a manual within a game. It is encouraged to explain the button mappings and the most optimal gameplay strategy.**
@@ -224,7 +226,9 @@ are made to emphasize that feel, while the more mundane sounds like the ball bei
 
 ## Narrative Design
 
-**oDocument how the narrative is present in the game via assets, gameplay systems, and gameplay.** 
+**Document how the narrative is present in the game via assets, gameplay systems, and gameplay.**
+
+The minimalist stylings of the player sprites allow the player to easliy project themselves into the game. The player can think of the sprite as any vehicle: it's not locked into a car for instance. With the dot representing the driver, there is a lot of room to experiment. The futuristic soccer theme is easily demonstrated in the field , especially the alternating stripes of green 
 
 ## Press Kit and Trailer
 
