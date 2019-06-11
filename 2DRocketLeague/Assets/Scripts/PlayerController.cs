@@ -108,6 +108,11 @@ public class PlayerController : MonoBehaviour
             
             SoundManager.Singleton.Play("car_collision");
         }
+
+        if (collision.gameObject.tag == "barrier")
+        {
+            
+        }
     }
     
     void EnergyChange(int amount)

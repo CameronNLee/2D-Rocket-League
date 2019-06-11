@@ -25,11 +25,6 @@ public class GateTrigger : MonoBehaviour
             int score = int.Parse(teamScore.text);
             score++;
             teamScore.text = score.ToString();
-
-            
-           
-           
-           
         }
     }
 }
