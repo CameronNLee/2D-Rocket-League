@@ -36,7 +36,60 @@ You should replay any **bold text** with your own relevant information. Liberall
 
 **List your assets including their sources, and licenses.**
 
+All assets used in our game:
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/assets.PNG)
+
+Assets list:
+
+TO BE DONE
+
+
+Game Scene:
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/game_scene.PNG)
+
+
+**Animation**
+
+Boost animation:
+
+player1 boost animation:
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/boost_1.PNG)
+
+player2 boost animation:
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/boost_2.PNG)
+
+
+Countdown Timer animation:
+
+Timer:
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/boost_2.PNG)
+
+Timer(alarming):
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/boost_2.PNG)
+
+
+Energy bar animation:
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/energy_bar.PNG)
+
+
+Scrolling Text:
+
+When player score a goal:
+
+![ScreenShot](https://raw.github.com/FridaWang/CubeZone/master/Screenshots/score_a_goal.PNG)
+
+
+
 **Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
+
+
 
 ## Input
 
