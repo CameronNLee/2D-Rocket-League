@@ -8,7 +8,15 @@
 
 **In this section, explain how the game should be played. Treat this like a manual within a game. It is encouraged to explain the button mappings and the most optimal gameplay strategy.**
 
+The object of the game is to hit the ball into the other player's goal. After 5 minutes, whoever scored more goals is the winner. If you are the red player, you should hit the ball in the blue goal and if you are the blue player hit the ball in the red goal. In addition to basic movement, each player can activate their boost for a burst of speed. However, they can only boost as long as there is meter in their yellow boost gauge. To refill your boost gauge, simply pick up the yellow power ups that randomly spawn around the field. Make good use of your movement and keep track of your boost gauge to outmanuever the opponent!
 
+If you are the red player:
+- Move with the arrow keys
+- Boost with the space bar
+
+If you are the blue player:
+- Move with WASD
+- Boost with left shift
 
 
 # Main Roles #
@@ -51,99 +59,60 @@ If a player were to normally collide into the ball, however, then the ball gets 
 
 ## Animation and Visuals
 
-**A brief description**
-
-Create assets needed for our game and take this video (https://www.youtube.com/watch?v=UjqWUmmoq-E&t=170s) as an reference to complete the design of the game scene. Use a little bit exaggerated graphics visual style when set the ratio of players, soccer balls, and soccer fields.
-
-**Intersects with game feel:**
-
-See the 5,6,7,8 points in game feel part.
-
 **List your assets including their sources, and licenses.**
 
-**All assets used in our game:**
+All assets used in our game:
 
 ![ScreenShot](Screenshots/assets.PNG)
 
-**Assets list:**
+Assets list:
 
-**Downloaded online:**
-
-football field(modified).jpg
-
-comment: This assets have been modified by myself.
-
-Source: http://www.16pic.com/vector/pic_1244046.html
-
-License: No free license, for educational purpose only. 
-
- **Assets made by myself (see sprites folder):**
-
-  player1.PNG
-
-  player2.PNG
-
-  honeycomb.png
-
-  energy_icon.png
-
-  LargeEnergyBall.png
-
-  MediumEnergyBall.png
-
-  SmallEnergyBall.png
-
-  panel.png
-
-  White-square.jpg
-
-  ball.png
-
-  score_blue.png
-
-  score_red.png
-
-  soccer field.jpeg
+TO BE DONE
 
 
-**Design of the Game Scene:**
+Game Scene:
 
 ![ScreenShot](Screenshots/game_scene.PNG)
 
 
 **Animation**
 
-**Boost animation:**
+Boost animation:
 
- - player1 boost animation:                    
+player1 boost animation:
 
-<img src="Screenshots/boost_1.PNG" width="200" hegith="80">      
+![ScreenShot](Screenshots/boost_1.PNG)
 
- - player2 boost animation:
+player2 boost animation:
 
-<img src="Screenshots/boost_2.PNG" width="200" hegith="80">
-
-
-**Countdown Timer animation:**
-
- - Timer:
-
-<img src="Screenshots/timer.PNG" width="200" hegith="80">
-
- - Timer(alarming):
-
-<img src="Screenshots/timer(alarm).PNG" width="200" hegith="80">
-
-**Energy bar animation:**
-
-<img src="Screenshots/energy_bar.PNG" width="200" hegith="80
+![ScreenShot](Screenshots/boost_2.PNG)
 
 
-**Scrolling Text:**
+Countdown Timer animation:
 
- - When player score a goal:
+Timer:
 
-<img src="Screenshots/score_a_goal.PNG" width="200" hegith="80">
+![ScreenShot](Screenshots/timer.PNG)
+
+Timer(alarming):
+
+![ScreenShot](Screenshots/timer(alarm).PNG)
+
+
+Energy bar animation:
+
+![ScreenShot](Screenshots/energy_bar.PNG)
+
+
+Scrolling Text:
+
+When player score a goal:
+
+![ScreenShot](Screenshots/score_a_goal.PNG)
+
+
+
+**Describe how your work intersects with game feel, graphic design, and world-building. Include your visual style guide if one exists.**
 
 
 
