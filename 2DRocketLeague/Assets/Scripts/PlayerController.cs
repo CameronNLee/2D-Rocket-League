@@ -25,9 +25,6 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Energy;
     public Text EnergyText;
-    
-    private enum Phase {Boost, Normal, None};
-    private Phase CurrentPhase;
 
     // Start is called before the first frame update
     void Start()
@@ -35,17 +32,12 @@ public class PlayerController : MonoBehaviour
         this.Forward = ScriptableObject.CreateInstance<MoveForward>();
         this.PlayerTwoMovement = ScriptableObject.CreateInstance<PlayerTwoMovement>();
         this.PlayerOneMovement = ScriptableObject.CreateInstance<PlayerOneMovement>();
-        this.Accelerate = ScriptableObject.CreateInstance<AcceleratePlayer>();
 
-        // Default values if not setting the SerializeField vars.
-        // this.KickForce = 30.0f;
-        // this.MovementSpeed = 50.0f;
         this.PreviousMovementSpeed = this.MovementSpeed;
         this.PreviousKickForce = this.KickForce;
-        this.CurrentPhase = Phase.None;
     }
 
-    // Update is called once per frame
+    // Update is called once per frame/
     void Update()
     {
         
@@ -58,12 +50,8 @@ public class PlayerController : MonoBehaviour
         else
         {
             this.PlayerTwoBoost();
-            this.PlayerTwoMovement.Execute(this.gameObject);
-            
+            this.PlayerTwoMovement.Execute(this.gameObject);   
         }
-        
-        // Accelerate button to actually start moving in direction you are facing.
-
     }
     
     void OnCollisionEnter(Collision collision)
@@ -105,14 +93,8 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.name == "player2" || collision.gameObject.name == "player1")
         {
-            
             SoundManager.Singleton.Play("car_collision");
-        }
-
-        if (collision.gameObject.tag == "barrier")
-        {
-            
-        }
+        } 
     }
     
     void EnergyChange(int amount)
@@ -129,8 +111,6 @@ public class PlayerController : MonoBehaviour
     private void PlayerOneBoost()
     {
         // Only so that the boost sound effect plays once when you hold the button.
-        // Probably a better idea to use the enum Phase and play the sound effect
-        // based on what phase you're in instead.
         if (Input.GetButtonDown("Jump"))
         {
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
@@ -151,7 +131,6 @@ public class PlayerController : MonoBehaviour
                 var value = (residualEnergy * 100);
                 this.Energy.GetComponent<Image>().fillAmount = residualEnergy > 0 ? residualEnergy : 0;
                 this.EnergyText.text = (Mathf.Ceil(residualEnergy * 100)).ToString();
-                // this.Accelerate.Execute(this.gameObject);
                 this.MovementSpeed = this.PreviousMovementSpeed * 2;
             }
             else
@@ -172,8 +151,6 @@ public class PlayerController : MonoBehaviour
     private void PlayerTwoBoost()
     {
         // Only so that the boost sound effect plays once when you hold the button.
-        // Probably a better idea to use the enum Phase and play the sound effect
-        // based on what phase you're in instead.
         if (Input.GetButtonDown("Fire3"))
         {
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
@@ -194,7 +171,6 @@ public class PlayerController : MonoBehaviour
                 var value = (residualEnergy * 100);
                 this.Energy.GetComponent<Image>().fillAmount = residualEnergy > 0 ? residualEnergy : 0;
                 this.EnergyText.text = (Mathf.Ceil(residualEnergy * 100)).ToString();
-                // this.Accelerate.Execute(this.gameObject);
                 this.MovementSpeed = this.PreviousMovementSpeed * 2;
             }
             else
