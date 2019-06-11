@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     private float PreviousMovementSpeed;
     private float PreviousKickForce;
     
-    private IPlayerCommand Forward;
     private IPlayerCommand PlayerTwoMovement;
     private IPlayerCommand PlayerOneMovement;
     private IPlayerCommand Accelerate;
@@ -29,7 +28,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.Forward = ScriptableObject.CreateInstance<MoveForward>();
         this.PlayerTwoMovement = ScriptableObject.CreateInstance<PlayerTwoMovement>();
         this.PlayerOneMovement = ScriptableObject.CreateInstance<PlayerOneMovement>();
 
