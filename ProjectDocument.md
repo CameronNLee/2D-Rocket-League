@@ -173,3 +173,27 @@ are made to emphasize that feel, while the more mundane sounds like the ball bei
 ## Game Feel
 
 **Document what you added to and how you tweaked your game to improve its game feel.**
+
+
+ 1. Use WASD (arror keys) to control instead of using A/D (Left/Right keys) to rotate along with W(Up arror key) to move forward, which makes the player much easier to control. 
+ 
+ 2. Introduce a Energy System to the game. We got this idea from some other soccer game. The energy system introduce variables to the player's speed. They can now use their own strategy to decide when/how much they would like to use energy to boost in order to make a good kick/defense.
+
+    We also implement 2 ways of energy recharging:
+
+ - Passive Energy regeneration: both players will passively get 1% of energy every 2 secongd. 
+
+ - By actively collecting the energy ball: The energySpawner will generate a new energy ball (small/medium/large ball with a generate probability of 50%/30%/20%) every 5 second at a random postion. The maximum number of the uncollected enery ball is set to 6. 
+ 
+ 3.  Make sure the ball go whatever direction the player pressed, which improve player's feel of control. See more implement details in the Movement/Physics part.
+ 
+ 4. Add unvisible barriers around the field to prevent the ball to go out of the field. Also add barrier collision so ball no longer gets stuck in borders/corners.
+
+ 5. Add a "head" to the player's sprite, and implement a RotationLerp() function to make the head face the direction in which the player is moving towards. Since we finally decided to use WASD to make movement, it would provide the player a better sence of control.
+
+ 6. Change the Timer's text color from Color.Black to Color.Red when there's only one minute left.  
+
+ 7. Add color to the gate. When doing game testing, we find that some students were confused about which gate they should shoot to at the very begining. By adding the same color of the player to the gate, this problem will no longer exist.
+ 
+ 8. Add boosting sould/animation to make the process more visible to player. 
+ 
