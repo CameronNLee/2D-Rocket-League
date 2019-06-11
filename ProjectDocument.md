@@ -27,6 +27,10 @@ You should replay any **bold text** with your own relevant information. Liberall
 ## User Interface
 
 **Describe your user interface and how it relates to gameplay. This can be done via the template.**
+Our UI packs the most important information in teh center of the screen. The timer is the first thing in the center, as it is shared between both players. On either side is each players score, differentiated by the red and blue colors of their sprites. Lastly, the
+yellow colors of the boost bars are eye catching so you can clearly tell how much boost you have left in the tank. The lightning bolt
+motif clearly demonstrates this, and by having the boost deplete toward the center, similar to fighting games, it helps to compress
+all the information towards the center so the player can see all the important information at a glance.
 
 ## Movement/Physics
 
