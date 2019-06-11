@@ -54,16 +54,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AbstractCameraController.cs" />
-     <Compile Include="Assets\Scripts\AcceleratePlayer.cs" />
+     <Compile Include="Assets\Scripts\BarrierTrigger.cs" />
      <Compile Include="Assets\Scripts\CountDown.cs" />
      <Compile Include="Assets\Scripts\EnergySpawner.cs" />
      <Compile Include="Assets\Scripts\GateTrigger.cs" />
      <Compile Include="Assets\Scripts\IPlayerCommand.cs" />
      <Compile Include="Assets\Scripts\MainCameraController.cs" />
-     <Compile Include="Assets\Scripts\MoveForward.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerOneMovement.cs" />
-     <Compile Include="Assets\Scripts\Players.cs" />
      <Compile Include="Assets\Scripts\PlayerTwoMovement.cs" />
      <Compile Include="Assets\Scripts\ScrollText.cs" />
      <Compile Include="Assets\Scripts\ScrollTextManager.cs" />
