@@ -122,6 +122,22 @@ For our game, we implemented the command pattern for player input as well as the
 
 **List your assets including their sources, and licenses.**
 
+ball_kick1.wav - https://www.partnersinrhyme.com/soundfx/sports_sounds/sports_foot-ball-kick_wav.shtml
+License: Royalty Free
+
+boost1.wav - https://freesound.org/people/OnlyTheGhosts/sounds/251430/
+License: Creative Commons Attribution 3.0 Unported (CC BY 3.0) 
+
+car_collision.wav - https://freesound.org/people/Halleck/sounds/121622/
+License: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+
+pickup1.wav - https://freesound.org/people/CharlieWD100/sounds/440559/
+License: Creative Commons 1.0
+
+score2.wav - unknown
+
+bg_music.mp3 - unknown
+
 **Describe the implementation of your audio system.**
 
 For the handling of audio assets, our project opted for a singleton manager pattern implemented in a script called SoundManager.cs. The rationale for doing so was to have an easy and seamless way to execute code related to sound files at any script at any point in the project. In essence, the script acts as a way to handle global variables related to playing/stopping sound assets. An additional benefit is being able to do this across scenes: the pattern allows for the inclusion/exclusion of sound without the data being destroyed.
