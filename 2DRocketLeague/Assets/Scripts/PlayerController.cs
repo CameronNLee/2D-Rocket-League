@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
             if (residualEnergy != 0)
             {
-                residualEnergy -= 0.01f;
+                residualEnergy -= 0.007f;
                 var value = (residualEnergy * 100);
                 this.Energy.GetComponent<Image>().fillAmount = residualEnergy > 0 ? residualEnergy : 0;
                 this.EnergyText.text = (Mathf.Ceil(residualEnergy * 100)).ToString();
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
             var residualEnergy = this.Energy.GetComponent<Image>().fillAmount;
             if (residualEnergy != 0)
             {
-                residualEnergy -= 0.01f;
+                residualEnergy -= 0.007f;
                 var value = (residualEnergy * 100);
                 this.Energy.GetComponent<Image>().fillAmount = residualEnergy > 0 ? residualEnergy : 0;
                 this.EnergyText.text = (Mathf.Ceil(residualEnergy * 100)).ToString();
