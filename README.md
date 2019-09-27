@@ -1,4 +1,6 @@
 ### ECS189L-Project: 2D Rocket League!!
+For game documentation, see ProjectDocument.md
+2D Rocket League clone made in Unity C#.
 
 ## Team Member Roles
 
